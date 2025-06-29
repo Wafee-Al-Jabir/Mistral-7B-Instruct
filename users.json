@@ -1,0 +1,49 @@
+{
+  "chats": {
+    "2577f9f2-2f15-432d-8389-92e5328cd248": [
+      {
+        "id": "b3517ad6-2ff3-4d7d-94e8-a0ac47e0658a",
+        "title": "hi",
+        "created_at": "2025-06-28T22:02:05.802326",
+        "messages": [
+          {
+            "role": "user",
+            "content": "hi",
+            "timestamp": "2025-06-28T22:02:05.802326"
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "timestamp": "2025-06-28T22:02:06.468755"
+          }
+        ]
+      },
+      {
+        "id": "984037fe-0970-4c1f-a1bd-41c855fafc35",
+        "title": "gimme some code",
+        "created_at": "2025-06-29T09:48:13.400379",
+        "messages": [
+          {
+            "role": "user",
+            "content": "gimme some code",
+            "timestamp": "2025-06-29T09:48:13.400379"
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "timestamp": "2025-06-29T09:48:15.081446"
+          }
+        ]
+      }
+    ]
+  },
+  "users": [
+    {
+      "created_at": "2025-06-28T12:27:44.070331",
+      "email": "wafee.aljabir@gmail.com",
+      "id": "2577f9f2-2f15-432d-8389-92e5328cd248",
+      "password": "93aef757c59a421ad75ca715d509cf976b33b9f5a7dcb346c44505d5fcbe793c",
+      "username": "Wafee"
+    }
+  ]
+}
