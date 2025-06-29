@@ -42,15 +42,15 @@
         <div class="sidebar collapsed p-0">
           <div class="sidebar-content">
             <div class="sidebar-header">
-              <div class="sidebar-logo">
+              <div class="sidebar-logo collapsed" style="text-align: center">
                 <span>
-                  <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" alt="Chatbot" class="sidebar-logo-img">
+                  <div class="sidebar-logo-img" style="height:40px;width:40px; aspect-ratio: 1">
+                    <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" alt="Chatbot" class="img-fluid">
+                  </div>
                 </span>
               </div>
-              <button id="sidebarToggle" class="menu-btn" title="Toggle Sidebar Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+              <button id="sidebarToggle" class="menu-btn btn btn-light" title="Toggle Sidebar Menu">
+                <span class="fas fa-bars"></span>
               </button>
             </div>
             <div class="sidebar-body">
@@ -67,7 +67,71 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar-footer">
+            <div class="                <div class="sidebar-footer">
+                  <div class="card-logo" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="btn-text">Logout</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Main Chat Area -->
+            <div class="chat chat-area p-0">
+              <div class="card">
+                <div class="card-header msg_head">
+                  <div class="d-flex bd-highlight justify-content-between align-items-center">
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img alt="ChatBot Avatar"
+                          src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png"
+                          class="rounded-circle user_img"
+                        />
+                        <span class="online_icon"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Mistral</span>
+                        <p>Code & AI Assistant</p>
+                      </div>
+                    </div>
+                    <div class="header-actions d-flex align-items-center">
+                      <div class="user-profile-container">
+                         <div id="userProfileBtn" class="user-profile-btn" title="User Profile">
+                           <span id="userInitial" class="user-initial">U</span>
+                         </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="messages" class="card-body msg_card_body"></div>
+                <div class="card-footer">
+                  <form id="messageArea" class="input-group">
+                    <textarea
+                      id="user-input"
+                      name="msg"
+                      placeholder="Type your message..."
+                      autocomplete="off"
+                      class="form-control type_msg"
+                      rows="1"
+                      required
+                    ></textarea>
+                    <div class="input-group-append">
+                      <button title="Send message"
+                        type="submit"
+                        id="send-btn"
+                        class="input-group-text send_btn"
+                      >
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+">
               <div class="card-logo" id="logoutBtn">
                 <i class="fas fa-sign-out-alt"></i>
                 <span class="btn-text">Logout</span>
@@ -89,8 +153,8 @@
                     <span class="online_icon"></span>
                   </div>
                   <div class="user_info">
-                    <span>Mistral 7B Instruct</span>
-                    <p>Ask me anything!</p>
+                    <span>Mistral</span>
+                    <p>Code & AI Assistant</p>
                   </div>
                 </div>
                 <div class="header-actions d-flex align-items-center">
@@ -104,10 +168,7 @@
             </div>
             <div id="messages" class="card-body msg_card_body"></div>
             <div class="card-footer">
-              <div class="image-controls">
-                <input type="text" id="image-prompt" class="form-control" placeholder="Describe image to generate...">
-                <button id="generate-image-btn" class="btn btn-secondary">Generate Image</button>
-            </div>
+              
             <form id="messageArea" class="input-group">
                 <textarea
                   id="user-input"
